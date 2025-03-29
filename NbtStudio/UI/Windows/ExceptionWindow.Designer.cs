@@ -85,7 +85,7 @@
             this.ButtonCopy.Name = "ButtonCopy";
             this.ButtonCopy.Size = new System.Drawing.Size(93, 35);
             this.ButtonCopy.TabIndex = 3;
-            this.ButtonCopy.Text = LocalizationManager.GetText("Copy");
+            this.ButtonCopy.Text = LocalizationManager.GetText("Exception_Copy");
             this.ButtonCopy.Visible = false;
             this.ButtonCopy.Click += new System.EventHandler(this.ButtonCopy_Click);
             // 

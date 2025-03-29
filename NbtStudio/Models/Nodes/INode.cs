@@ -1,5 +1,6 @@
 ﻿using Aga.Controls.Tree;
 using fNbt;
+using NbtStudio.Models.Nodes;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -51,6 +52,9 @@ namespace NbtStudio
             Register<RegionFile>((tree, parent, region) => new RegionFileNode(tree, parent, region));
             Register<Chunk>((tree, parent, chunk) => new ChunkNode(tree, parent, chunk));
             Register<NbtFolder>((tree, parent, folder) => new FolderNode(tree, parent, folder));
+            Register<LevelDBFolder>((tree, parent, folder) => new LevelDBNode(tree, parent, folder));
+            Register<ILevelDBKeyGroup>((tree, parent, group) => new LevelDBKeyGroupNode(tree, parent, group));
+            Register<LevelDBKey>((tree, parent, key) => new LevelDBKeyNode(tree, parent, key));
         }
 
         private static readonly Dictionary<Type, Func<NbtTreeModel, INode, object, INode>> RegisteredConverters = new Dictionary<Type, Func<NbtTreeModel, INode, object, INode>>();

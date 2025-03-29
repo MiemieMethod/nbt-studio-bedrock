@@ -159,7 +159,7 @@ namespace NbtStudio
 
         protected void ParseDots(string str)
         {
-            Dots = str.Split('.').Select(x => int.Parse(x)).ToArray();
+            Dots = str.Split('+')[0].Split('.').Select(x => int.Parse(x)).ToArray();
         }
 
         public static bool operator >(Version v1, Version v2)

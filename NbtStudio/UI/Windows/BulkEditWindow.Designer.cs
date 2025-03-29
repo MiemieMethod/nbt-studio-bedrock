@@ -54,7 +54,7 @@
             this.FindLabel.Name = "FindLabel";
             this.FindLabel.Size = new System.Drawing.Size(34, 15);
             this.FindLabel.TabIndex = 1;
-            this.FindLabel.Text = LocalizationManager.GetText("Find") + ":";
+            this.FindLabel.Text = LocalizationManager.GetText("Bulk_Find");
             // 
             // ReplaceLabel
             // 
@@ -65,7 +65,7 @@
             this.ReplaceLabel.Name = "ReplaceLabel";
             this.ReplaceLabel.Size = new System.Drawing.Size(56, 15);
             this.ReplaceLabel.TabIndex = 3;
-            this.ReplaceLabel.Text = LocalizationManager.GetText("Replace") + ":";
+            this.ReplaceLabel.Text = LocalizationManager.GetText("Bulk_Replace");
             // 
             // MainTable
             // 

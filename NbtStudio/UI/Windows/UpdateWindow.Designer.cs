@@ -85,7 +85,7 @@
             this.CurrentVersionLabel.Name = "CurrentVersionLabel";
             this.CurrentVersionLabel.Size = new System.Drawing.Size(111, 17);
             this.CurrentVersionLabel.TabIndex = 0;
-            this.CurrentVersionLabel.Text = LocalizationManager.GetText("Current_Version") + ":";   
+            this.CurrentVersionLabel.Text = LocalizationManager.GetText("Current_Version");   
             // 
             // AvailableVersionLabel
             // 
@@ -95,7 +95,7 @@
             this.AvailableVersionLabel.Name = "AvailableVersionLabel";
             this.AvailableVersionLabel.Size = new System.Drawing.Size(121, 17);
             this.AvailableVersionLabel.TabIndex = 2;
-            this.AvailableVersionLabel.Text = LocalizationManager.GetText("Available_Version") + ":";
+            this.AvailableVersionLabel.Text = LocalizationManager.GetText("Available_Version");
             // 
             // ChangelogLabel
             // 
@@ -105,7 +105,7 @@
             this.ChangelogLabel.Name = "ChangelogLabel";
             this.ChangelogLabel.Size = new System.Drawing.Size(76, 17);
             this.ChangelogLabel.TabIndex = 4;
-            this.ChangelogLabel.Text = LocalizationManager.GetText("Changelog") + ":";
+            this.ChangelogLabel.Text = LocalizationManager.GetText("Changelog");
             // 
             // CurrentVersionValue
             // 

@@ -164,10 +164,10 @@ public static class LocalizationManager
         {
             "en-US", new Dictionary<string, string>
             {
-                {"MenuFile", "File"},
-                {"MenuEdit", "Edit"},
-                {"MenuSearch", "Find"},
-                {"MenuHelp", "Help"},
+                {"MenuFile", "&File"},
+                {"MenuEdit", "&Edit"},
+                {"MenuSearch", "&Find"},
+                {"MenuHelp", "&Help"},
             }
         },
         {

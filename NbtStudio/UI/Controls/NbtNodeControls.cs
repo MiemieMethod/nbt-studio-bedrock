@@ -1,6 +1,7 @@
 ﻿using Aga.Controls.Tree;
 using Aga.Controls.Tree.NodeControls;
 using fNbt;
+using NbtStudio.Models.Nodes;
 using System;
 using System.Collections.Generic;
 using System.Drawing;
@@ -63,6 +64,15 @@ namespace NbtStudio.UI
                 return IconSource.GetImage(IconType.Region).Image;
             if (node is ChunkNode)
                 return IconSource.GetImage(IconType.Chunk).Image;
+            if (node is LevelDBNode)
+                return IconSource.GetImage(IconType.Region).Image;
+            if (node is LevelDBKeyGroupNode group)
+            {
+                if (group.KeyGroup.Type != LevelDBKeyGroupType.Dimension && group.KeyGroup.Type != LevelDBKeyGroupType.Chunk)
+                    return IconSource.GetImage(IconType.Folder).Image;
+            }
+            if (node is LevelDBKeyNode)
+                return IconSource.GetImage(IconType.File).Image;
             if (node is NbtTagNode tag)
                 return NbtUtil.TagTypeImage(IconSource, tag.Tag.TagType).Image;
             return null;
@@ -171,6 +181,12 @@ namespace NbtStudio.UI
                 var world = coords.WorldChunk(chunk.Chunk);
                 return $"{text} in world at ({world.x}, {world.z})";
             }
+            if (node is LevelDBNode leveldb)
+                return Path.GetFileName(leveldb.Folder.Path);
+            if (node is LevelDBKeyGroupNode group)
+                return Path.GetFileName(group.GetLabel());
+            if (node is LevelDBKeyNode key)
+                return Path.GetFileName(key.GetLabel());
             if (node is NbtTagNode tag)
                 return Snbt.GetName(tag.Tag, SnbtOptions.Preview);
             return null;
@@ -185,10 +201,13 @@ namespace NbtStudio.UI
                 var folder = folder_node.Folder;
                 if (folder.HasScanned)
                 {
+                    string folder_count = "";
+                    string db_count = "";
                     if (folder.Subfolders.Any())
-                        return $"[{StringUtils.Pluralize(folder.Subfolders.Count, "folder")}, {StringUtils.Pluralize(folder.Files.Count, "file")}]";
-                    else
-                        return $"[{StringUtils.Pluralize(folder.Files.Count, "file")}]";
+                        folder_count = $"[{StringUtils.Pluralize(folder.Subfolders.Count, "folder")}, ";
+                    else if (folder.DBFolders.Any())
+                        db_count = $"{StringUtils.Pluralize(folder.DBFolders.Count, "leveldb")}, ";
+                    return $"[{folder_count}{db_count}{StringUtils.Pluralize(folder.Files.Count, "file")}]";
                 }
                 else
                     return "(open to load)";
@@ -205,6 +224,34 @@ namespace NbtStudio.UI
                 else
                     return "(open to load)";
             }
+            if (node is LevelDBNode leveldb)
+            {
+                var folder = leveldb.Folder;
+                if (folder.HasResolved)
+                {
+                    string levelname = leveldb.TryGetLevelName();
+                    if (!String.IsNullOrEmpty(levelname))
+                        levelname = levelname + ", ";
+                    return $"[{levelname}{StringUtils.Pluralize(leveldb.Folder.Keys.Count(), "key")}]";
+                }
+                else
+                    return "(open to load)";
+            }
+            if (node is LevelDBKeyGroupNode group)
+            {
+                var keyGroup = group.KeyGroup;
+                if (keyGroup.HasResolved)
+                {
+                    string type = "key";
+                    if (keyGroup.Type == LevelDBKeyGroupType.Dimension)
+                        type = "chunk";
+                    return $"[{StringUtils.Pluralize(keyGroup.Count, type)}]";
+                }
+                else
+                    return "(open to load)";
+            }
+            if (node is LevelDBKeyNode key_node)
+                return key_node.PreviewContents();
             if (node is NbtTagNode tag)
                 return NbtUtil.PreviewNbtValue(tag.Tag);
             return null;

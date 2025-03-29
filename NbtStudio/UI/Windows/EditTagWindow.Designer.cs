@@ -122,7 +122,7 @@
             this.ValueLabel.Name = "ValueLabel";
             this.ValueLabel.Size = new System.Drawing.Size(41, 15);
             this.ValueLabel.TabIndex = 3;
-            this.ValueLabel.Text = LocalizationManager.GetText("Value") + ":";
+            this.ValueLabel.Text = LocalizationManager.GetText("Value_Colon");
             // 
             // ValueBox
             // 
@@ -145,7 +145,7 @@
             this.NameLabel.Name = "NameLabel";
             this.NameLabel.Size = new System.Drawing.Size(44, 15);
             this.NameLabel.TabIndex = 1;
-            this.NameLabel.Text = LocalizationManager.GetText("Name") + ":";
+            this.NameLabel.Text = LocalizationManager.GetText("Name_Colon");
             // 
             // NameBox
             // 

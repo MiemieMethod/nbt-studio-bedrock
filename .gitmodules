@@ -16,3 +16,6 @@
 [submodule "utils.nbt"]
 	path = utils.nbt
 	url = https://github.com/tryashtar/utils.nbt
+[submodule "level-db-wrapper"]
+	path = level-db-wrapper
+	url = https://github.com/MiemieMethod/level-db-wrapper

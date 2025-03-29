@@ -69,7 +69,7 @@
             this.InfoLabel.Name = "InfoLabel";
             this.InfoLabel.Size = new System.Drawing.Size(161, 96);
             this.InfoLabel.TabIndex = 1;
-            this.InfoLabel.Text = "Copyright © 2020 tryashtar\r\n\r\nBased on:\r\n\r\n\r\nIcons created by:";
+            this.InfoLabel.Text = "Copyright © 2025\r\ntryashtar and miemiemethod\r\nBased on:\r\n\r\n\r\nIcons created by:";
             // 
             // NbtExplorerLabel
             // 

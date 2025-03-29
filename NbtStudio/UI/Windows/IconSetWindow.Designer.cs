@@ -69,7 +69,7 @@
             this.ImportButton.Name = "ImportButton";
             this.ImportButton.Size = new System.Drawing.Size(63, 32);
             this.ImportButton.TabIndex = 1;
-            this.ImportButton.Text = LocalizationManager.GetText("Import");
+            this.ImportButton.Text = LocalizationManager.GetText("Icon_Import");
             this.ImportButton.UseVisualStyleBackColor = true;
             this.ImportButton.Click += new System.EventHandler(this.ImportButton_Click);
             // 

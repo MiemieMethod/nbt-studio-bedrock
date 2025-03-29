@@ -45,7 +45,7 @@ namespace NbtStudio
         {
             if (!Folder.HasScanned)
                 Folder.Scan();
-            return Folder.Subfolders.Concat<IHavePath>(Folder.Files);
+            return Folder.DBFolders.Concat(Folder.Subfolders.Concat<IHavePath>(Folder.Files));
         }
 
         public override string Description => System.IO.Path.GetFileName(Folder.Path);

@@ -74,7 +74,7 @@
             this.NameLabel.Name = "NameLabel";
             this.NameLabel.Size = new System.Drawing.Size(44, 15);
             this.NameLabel.TabIndex = 0;
-            this.NameLabel.Text = LocalizationManager.GetText("Name") + ":";
+            this.NameLabel.Text = LocalizationManager.GetText("Name_Colon");
             // 
             // ValueLabel
             // 
@@ -85,7 +85,7 @@
             this.ValueLabel.Name = "ValueLabel";
             this.ValueLabel.Size = new System.Drawing.Size(41, 15);
             this.ValueLabel.TabIndex = 2;
-            this.ValueLabel.Text = LocalizationManager.GetText("Value") + ":";
+            this.ValueLabel.Text = LocalizationManager.GetText("Value_Colon");
             // 
             // ButtonFindAll
             // 
@@ -176,7 +176,7 @@
             this.Name = "FindWindow";
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = LocalizationManager.GetText("Find");
+            this.Text = LocalizationManager.GetText("Find_Title");
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FindWindow_FormClosed);
             this.Load += new System.EventHandler(this.FindWindow_Load);
             this.ResumeLayout(false);

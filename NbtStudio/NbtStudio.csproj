@@ -11,11 +11,11 @@
     <AssemblyName>NbtStudio</AssemblyName>
     <ApplicationIcon>nbt_studio_icon_256.ico</ApplicationIcon>
     <Configurations>Debug;Release;PublishNormal;PublishSuperStandalone</Configurations>
-    <Authors>tryashtar</Authors>
+    <Authors>tryashtar;miemiemethod</Authors>
     <Company />
     <Product>NBT Studio</Product>
     <Description>Views and modifies NBT files</Description>
-    <Copyright>Copyright © 2020 tryashtar</Copyright>
+    <Copyright>Copyright © 2025 tryashtar and miemiemethod</Copyright>
     <PackageProjectUrl>https://github.com/tryashtar/nbt-studio</PackageProjectUrl>
     <RepositoryUrl>https://github.com/tryashtar/nbt-studio</RepositoryUrl>
     <PackageIcon>nbt_studio_icon_256.png</PackageIcon>
@@ -66,6 +66,7 @@
     <ProjectReference Include="..\utils.forms\TryashtarUtils.Forms.csproj" />
     <ProjectReference Include="..\utils.nbt\TryashtarUtils.Nbt.csproj" />
     <ProjectReference Include="..\utils.utility\TryashtarUtils.Utility.csproj" />
+    <ProjectReference Include="..\level-db-wrapper\LevelDBWrapper.csproj" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />

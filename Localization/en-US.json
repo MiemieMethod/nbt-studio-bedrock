@@ -1,0 +1,259 @@
+{
+"MenuFile" : "&File",
+	"New" : "&New",
+	"New_Hover" : "New File",
+	"New_from_Clipboard" : "New from &Clipboard",
+	//——————————
+	"New_Region_File" : "New &Region File",
+	"Open_File" : "&Open File",
+	"Open_File_Hover" : "Open File",
+	"Open_Folder" : "Open &Folder",
+	"Open_Folder_Hover" : "Open Folder",
+	"Import" : "&Import...",
+		"Import_File" : "&File",
+		"Import_Folder" : "F&older",
+		"Import_New_File" : "&New File",
+		"Import_New_Region_File" : "New &Region File",
+		"Import_From_Clipboard" : "From &Clipboard",
+	//——————————
+	"Save" : "&Save",
+	"Save_Hover" : "Save",
+	"Save_As" : "Save &As",
+	//——————————
+	"Recent" : "&Recent...",
+	
+"MenuEdit" : "&Edit",
+	"Undo" : "&Undo",
+	"Redo" : "&Redo",
+	//——————————
+	"Cut" : "Cu&t",
+	"Cut_Hover" : "Cut",
+	"Copy" : "&Copy",
+	"Copy_Hover" : "Copy",
+	"Paste" : "&Paste",
+	"Paste_Hover" : "Paste",
+	//——————————
+	"Rename" : "Re&name",
+	"Rename_Hover" : "Rename",
+	"Edit_Value" : "&Edit Value",
+	"Edit_Value_Hover" : "Edit",
+	"Edit_as_SNBT" : "Edit as &SNBT",
+	"Edit_as_SNBT_Hover" : "Edit as SNBT",
+	"Delete" : "&Delete",
+	"Delete_Hover" : "Delete",
+	//——————————
+	"Undo_History" : "Undo History...",
+	"Redo_History" : "Redo History...",
+	"Clear_Undo_History" : "Clear Undo History",
+	
+"MenuSearch" : "&Search",
+	"Find" : "&Find",
+	"Find_Hover" : "Find",
+	
+"MenuHelp" : "&Help",
+	"About" : "&About",
+	"Language" : "Languages",
+	"Change_Icons" : "&Change Icons",
+	//——————————
+	"Update" : "&Update",
+	"Check_for_Updates" : "Check for &Updates",
+
+
+//toolbar
+"Refresh" : "Refresh",
+"Sort" : "Sort",
+"Add_Chunk" : "Add Chunk",
+"Add_as_SNBT" : "Add as SNBT",
+
+
+//messages
+"Refresh_Failed" : "{0} failed to refresh:\n\n",
+"Load_Failed" : "{0} failed to load:\n\n",
+
+"Create_New_File_Anyway" : "Create a new file anyway?",
+"Open_New_File_Anyway" : "Open a new file anyway?",
+"Open_New_Folder_Anyway" : "Open a new folder anyway?",
+"Exit_Anyway": "Exit anyway?",
+
+"Clipboard_error" : "Clipboard error",
+	"Clipboard_error_Detail" : "Failed to parse SNBT from clipboard.",
+
+"Select_NBT_files" : "Select NBT files",
+"Select_NBT_folder" : "Select a folder that contains NBT files",
+
+"Unsaved_Changes" : "Unsaved Changes",
+	"Unsaved_Changes_Detail.1" : "You currently have unsaved changes.\n\nAre you sure you would like to discard the changes to these files?",
+	"Unsaved_Changes_Detail.2" : "You currently have unsaved changes.\n\n{0}",
+
+"Delete_Item_Confirmation_Removing" : "Are you sure you want to remove this item?",
+"Delete_Item_Confirmation" : "Are you sure you want to delete this item?",
+	"Delete_Item_Confirmation_Detail.1" : "Really delete this unsaved file?",
+	"Delete_Item_Confirmation_Detail.2" : "It will be sent to the recycle bin. This cannot be undone.",
+	"Delete_Item_Confirmation_Detail.3" : "Really delete {0}?",
+"Delete_Items_Confirmation_Removing" : "Are you sure you want to remove {0}?",
+"Delete_Items_Confirmation" : "Are you sure you want to delete {0}?",
+	"Delete_Items_Confirmation_Detail.1" : "Really delete these items?",
+	"Delete_Items_Confirmation_Detail.2" : "{0} will be send to the recycle bin. This cannot be undone.",
+"Error_while_deleting" : "Error while deleting",
+	"Error_while_deleting_Detail" : "An error occurred while deleting:",
+	
+"Update_check_failed" : "Update check failed",
+	"Update_check_failed_Detail" : "Failed to check for updates.",
+"Update_Page" : "Would you like to go to the update page?\n\n",
+"Latest_Update" : "You already seem to have the latest update.\n",
+"No_update_found" : "No update found",
+	
+	
+//Right click menu
+"Discard" : "&Discard",
+"Collapse" : "&Collapse",
+"Expand_All" : "&Expand All",
+"Deselect_all_Children" : "Dese&lect all Children",
+"Select_all_Children" : "Se&lect all Children",
+"Save_File" : "&Save File",
+"Save_File_As" : "Save File &As",
+"Refresh_Context" : "&Refresh",
+"Open_in_Explorer" : "&Open in Explorer",
+"Add" : "Add...",
+	"Add_Tag.1" : "Add {0} Tag",
+	"Add_Tag.2" : " {0} Tag",
+
+// TextBoxes
+"Missing_Name" : "Missing Name",
+	"Missing_Name_Detail" : "You must specify a name for this file",
+	"Tag_Missing_Name_Detail" : "You must specify a name for this tag",
+	
+"Illegal_Characters" : "Illegal Characters",
+	"Illegal_Characters_Detail" : "The name specified contains disallowed characters",
+	
+"File_Already_Exists" : "File Already Exists",
+	"File_Already_Exists_Detail" : "A file with this name already exists",
+	
+"Name_Disallowed" : "Name Disallowed",
+	"Name_Disallowed_Detail" : "This tag must not have a name",
+	
+"Duplicate_Name" : "Duplicate Name",
+	"Duplicate_Name_Detail" : "The compound already contains a tag with this name",
+	
+"Invalid_Format" : "Invalid Format",
+	"Invalid_Format_Detail" : "The value is formatted incorrectly for a {0}",
+	
+"Out_of_Range" : "Out of Range",
+	"Out_of_Range_Detail" : "The value for {0}s must be between {1} and {2}",
+	
+"Unknown_Error" : "Unknown Error",
+	"Unknown_Error_Detail" : "There was an unknown error attempting to parse the value",
+	
+"Regex_Parsing_Error" : "Regex Parsing Error",
+"Wrong_Type" : "Wrong Type",
+"Valid" : "Valid",
+
+//interface
+"OK" : "OK",
+"Cancel" : "Cancel",
+"Name_Colon" : "Name:",
+"Value_Colon" : "Value:",
+"Regex" : "Regex",
+"Word_Wrap" : "Word Wrap",
+"Minify" : "Minify",
+
+
+//ChunkCoordEditControl.cs
+"Chunk_Already_Present" : "Chunk Already Present",
+	"Chunk_Already_Present_Detail" : "There is already a chunk in the region at these coordinates",
+"Out_of_Bounds" : "Out of Bounds",
+	"Out_of_Bounds_Detail" : "Chunk coordinates must be between 0 and {0}",
+
+
+//BulkEditWindow.cs
+"Bulk_Find" : "Find:",
+"Bulk_Replace" : "Replace:",
+"Rename_Detail" : "Rename {0}",
+	"Current_Name" : "Current Name",
+	"New_Name" : "New Name",
+	"Old_Name" : "Old Name",
+"Edit_Detail" : "Edit {0}",
+	"Current_Value" : "Current Value",
+	"New_Value" : "New Value",
+"Edit_Detail_Tag" : "Edit Tags...",
+
+
+//EditChunkWindow.cs
+"Create_Chunk" : "Create Chunk",
+"Move_Chunk" : "Move Chunk",
+
+
+//EditHexWindow.cs
+"Elements" : "Elements {0} - {1}",
+"Element" : "Element {0}",
+"Conversion_Error" : "Can't convert bytes to a numeric type with size {0}",
+"Text_View" : "Text View",
+"Hex_View" : "Hex View",
+"Edit_Hex" : "Edit Hex",
+"Create_Tag_Detail" : "Create {0} Tag",
+"Edit_Tag_Detail" : "Edit {0} Tag",
+"Use_CreateTag" : "Use CreateTag to create tags",
+
+
+//EditSnbtWindow.cs
+"Create_Tag_as_SNBT" : "Create Tag as SNBT",
+	"Create_Tag_as_SNBT_Detail" : "Create {0} Tag as SNBT",
+"Edit_Tag_as_SNBT_Detail" : "Edit {0} Tag as SNBT",
+"Edit_SNBT" : "Edit SNBT...",
+
+
+//EditTagWindow.cs
+"Create_Tag" : "Create Tag",
+
+
+//ExceptionWindow.cs
+"Exception_Copy" : "Copy",
+"Less_Details" : "Less Details",
+"More_Details" : "More Details",
+"CheckLittleEndian" : "Required for all Bedrock Edition files",
+"CheckBedrockHeader" : "Required for Bedrock Edition level.dat files",
+"CheckJson" : "Quotes all keys, removes type suffixes and list indicators",
+
+
+//ExportWindow.cs
+"Little-Endian" : "Little-Endian",
+"Bedrock_Header" : "Bedrock Header",
+"Export_Settings" : "Export Settings",
+
+
+//FindWindow.cs
+"No_Results_Found" : "No results found",
+"Found_Amount" : "Found {0} matching results",
+"Find_Next" : "Find Next",
+"Find_Previous" : "Find Previous",
+"Find_All" : "Find All",
+"Find_Title" : "Find...",
+
+
+//IconSetWindow.cs
+"Icon_Import" : "Import",
+"Icon_ZIP" : "Select a custom icon ZIP file",
+"Failed_load_icons" : "Failed to load icons",
+	"Failed_load_icons_Detail" : "The custom icon source at '{0}' failed to load.",
+"Loading_icons" : "Loading icons",
+"Select_Icon_Set" : "Select Icon Set",
+
+
+// LanguageWindow.cs
+"LanguageWindow_Title" : "Select Language...",
+"Restart_Required" : "Notification",
+	"Restart_Required_Detail" : "A restart is required to apply changes. Would you like to restart now?",
+"Select_Language" : "Select Language",
+
+
+//RenameFileWindow.cs
+"Rename_File" : "Rename File",
+
+
+//UpdateWindow.cs
+"Update_error" : "Update error",
+	"Update_error_Detail" : "Failed to update the application.",
+"Current_Version" : "Current Version:",
+"Available_Version" : "Available Version:",
+"Changelog" : "Changelog",
+}
